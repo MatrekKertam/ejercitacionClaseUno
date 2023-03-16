@@ -6,11 +6,11 @@ public class Main {
     public static void main(String[] args) {
 
         //Creacion de materias
-        Materia Historia = new Materia("Historia");
-        Materia Politica = new Materia("Politica");
-        Materia educacionFisica = new Materia("Eduacion Fisica");
-        Materia Arte = new Materia("Arte");
-        Materia Informatica = new Materia("Informatica");
+        Materia Historia = new Materia("Historia", 22);
+        Materia Politica = new Materia("Politica", 33);
+        Materia educacionFisica = new Materia("Eduacion Fisica", 25);
+        Materia Arte = new Materia("Arte", 44);
+        Materia Informatica = new Materia("Informatica", 18);
 
         //Se crea un profesor
         Profesor gamalielQuiroz = new Profesor("Gamaliel Natanael","Quiroz", 24, Informatica, 1, 5, 2, "A");

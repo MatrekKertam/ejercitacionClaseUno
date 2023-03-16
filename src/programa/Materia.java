@@ -3,9 +3,11 @@ package programa;
 public class Materia {
 
     private String nombre;
+    private int clases;
 
-    public Materia(String nombre) {
+    public Materia(String nombre, int clases) {
         this.nombre = nombre;
+        this.clases = clases;
     }
 
     public String getNombre() {
@@ -16,8 +18,16 @@ public class Materia {
         this.nombre = nombre;
     }
 
+    public int getClases(){
+        return clases;
+    }
+
+    public void setClases(int clases) {
+        this.clases = clases;
+    }
+
     @Override
     public String toString() {
-        return  nombre;
+        return  "La materia " + this.getNombre() + " tiene " + this.getClases() + " clases";
     }
 }
