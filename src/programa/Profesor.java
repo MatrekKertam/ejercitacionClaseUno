@@ -2,13 +2,13 @@ package programa;
 
 public class Profesor extends Persona{
 
-    private String materiaAcargo; // La/s materias que tiene a cargo
+    private Materia materiaAcargo; // La/s materias que tiene a cargo
     private int cantidadDeMaterias; //La cantidad de materias que da
     private int antiguedad; //los años que estuvo trabajando
     private int año; // Año/s en los que da clases
     private String curso; // Curso/s en los que da clases
 
-    public Profesor(String nombre, String apellido, int edad, String materiaAcargo, int cantidadDeMaterias, int antiguedad, int año, String curso) {
+    public Profesor(String nombre, String apellido, int edad, Materia materiaAcargo, int cantidadDeMaterias, int antiguedad, int año, String curso) {
         super(nombre, apellido, edad);
         this.materiaAcargo = materiaAcargo;
         this.cantidadDeMaterias = cantidadDeMaterias;
@@ -17,11 +17,11 @@ public class Profesor extends Persona{
         this.curso = curso;
     }
 
-    public String getMateriaAcargo() {
+    public Materia getMateriaAcargo() {
         return materiaAcargo;
     }
 
-    public void setMateriaAcargo(String materiaAcargo) {
+    public void setMateriaAcargo(Materia materiaAcargo) {
         this.materiaAcargo = materiaAcargo;
     }
 
