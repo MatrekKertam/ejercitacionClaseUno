@@ -47,4 +47,16 @@ public class Alumno extends Persona{
         this.materia = materia;
         return "Se inscribio al alumno " + this.getNombre() +" " + this.getApellido() + " en la materia: " + this.getMateria();
     }
+
+    @Override
+    public String toString() {
+        return "Datos del alumno: " +
+                "\nNombre: " + getNombre() +
+                "\nApellido: " + getApellido() +
+                "\nEdad: " + getEdad() +
+                "\nMatricula: " + getMatricula() +
+                "\nAño: " + getAño() +
+                "\nCurso: " + getCurso() +
+                "\nMateria/s: " + getMateria();
+    }
 }

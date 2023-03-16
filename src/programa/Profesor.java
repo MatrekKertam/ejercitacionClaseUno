@@ -56,4 +56,15 @@ public class Profesor extends Persona{
     public void setCurso(String curso) {
         this.curso = curso;
     }
+
+    @Override
+    public String toString() {
+        return "Datos del profesor: " +
+                "\nNombre: " + getNombre() +
+                "\nApellido: " + getApellido() +
+                "\nEdad: " + getEdad() +
+                "\nMateria/s a cargo: " + getMateriaAcargo() +
+                "\nCantidad de materias a cargo: " + getCantidadDeMaterias() +
+                "\nAños trabajando: " + getAntiguedad();
+    }
 }
